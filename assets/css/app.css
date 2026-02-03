@@ -4656,3 +4656,7 @@ button:hover {
   font-weight: 600;
   color: #ffffff;
 }
+
+.image-item {
+  text-align: right !important;
+}
