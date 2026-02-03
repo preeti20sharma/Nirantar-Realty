@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Realtor - HTML Real Estate Template">
+        <meta name="description"
+            content="Independent Builder Floors – Prime HUDA Sectors, Faridabad">
 
         <title>Nirantar Realty</title>
 
@@ -26,7 +27,7 @@
             href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
 
     <body>
@@ -97,18 +98,16 @@
             </header>
             <!-- Header Area end -->
 
-            <!-- Contact Form Modal -->
+            <!-- Contact Form Modal  -->
             <div class="modal fade " id="contactModal" tabindex="-1"
                 aria-labelledby="contactModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content bg-transparent border-0">
-
                         <!-- Modal Body with Form -->
                         <div class="modal-body p-0">
-                            <form
+                            <form id="ajax-header-contact"
                                 class="p-4 rounded-4 shadow popup-forms text-white position-relative 
-                     mx-auto" style="max-width: 400px;">
-
+                                mx-auto" style="max-width: 400px;">
                                 <!-- Close button inside form -->
                                 <button type="button"
                                     class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
@@ -119,35 +118,32 @@
                                     Free Consultation !</h4>
 
                                 <div class="mb-3">
-                                    <input type="text"
+                                    <input type="text" name="name1"
                                         class="form-control form-controls"
                                         placeholder="Enter your name">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text"
+                                    <input type="text" name="City"
                                         class="form-control form-controls"
                                         placeholder="Enter your City">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="tel"
+                                    <input type="tel" name="phone"
                                         class="form-control form-controls"
                                         placeholder="Enter your phone">
                                 </div>
-
-                                <!-- Button full-width on mobile, centered on large -->
                                 <div class="d-grid mb-3">
                                     <button type="submit"
                                         class="btn btn-outline-light text-dark bg-white w-100">
                                         Send Message
                                     </button>
                                 </div>
-
                                 <!-- Checkbox Notice -->
                                 <div class="form-check">
                                     <input type="checkbox"
-                                        class="form-check-input"
+                                        class="form-check-input" checked
                                         id="contactCheck">
                                     <label
                                         class="form-check-label text-white small"
@@ -218,43 +214,40 @@
                             </div>
                         </div>
                         <div class="content-right">
-                            <form
+                            <!-- form 2 -->
+                            <form id="ajax-header-contact-2"
                                 class="p-4 rounded-4 shadow-lg slider-form d-none d-md-block  text-white position-relative 
-                     mx-auto" style="max-width: 350px;">
+                                mx-auto" style="max-width: 350px;">
                                 <h4 class="mb-4 text-center text-white ">Get a
                                     Free Consultation !</h4>
-
                                 <div class="mb-3">
-                                    <input type="text"
+                                    <input type="text" name="name1"
                                         class="form-control form-controls"
                                         placeholder="Enter your name">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="City"
+                                    <input type="text" name="City"
                                         class="form-control form-controls"
                                         placeholder="Enter your City">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text"
+                                    <input type="tel" name="phone"
                                         class="form-control form-controls"
                                         placeholder="Enter your phone">
                                 </div>
-
-                                <!-- Button full-width on mobile, centered on large -->
                                 <div class="d-grid mb-3">
                                     <button type="submit"
                                         class="btn btn-outline-light text-dark bg-white w-100">
                                         Send Message
                                     </button>
                                 </div>
-
                                 <!-- Checkbox Notice -->
                                 <div class="form-check">
                                     <input type="checkbox"
                                         class="form-check-input"
-                                        id="contactCheck">
+                                        id="contactCheck" checked>
                                     <label
                                         class="form-check-label text-white small"
                                         for="contactCheck">
@@ -271,43 +264,39 @@
             </section>
             <!-- Hero Section End -->
 
-            <!-- mobile view -->
+            <!-- mobile view form 3 -->
             <div class="m-4">
-                <form
+                <form id="ajax-header-contact-3"
                     class="p-4 rounded-4 d-block d-sm-none shadow popup-forms text-white position-relative 
                      mx-auto" style="max-width: 350px;">
-
-                    <!-- Close button inside form -->
-
                     <h4 class="mb-4 text-center text-white">Get a Free
                         Consultation !</h4>
-
                     <div class="mb-3">
                         <input type="text" class="form-control form-controls"
+                            name="name1"
                             placeholder="Enter your name">
                     </div>
 
                     <div class="mb-3">
                         <input type="text" class="form-control form-controls"
+                            name="City"
                             placeholder="Enter your City">
                     </div>
 
                     <div class="mb-3">
                         <input type="tel" class="form-control form-controls"
+                            name="phone"
                             placeholder="Enter your phone">
                     </div>
-
-                    <!-- Button full-width on mobile, centered on large -->
                     <div class="d-grid mb-3">
                         <button type="submit"
                             class="btn btn-outline-light text-dark bg-white w-100">
                             Send Message
                         </button>
                     </div>
-
                     <!-- Checkbox Notice -->
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input"
+                        <input type="checkbox" class="form-check-input" checked
                             id="contactCheck">
                         <label class="form-check-label text-white small"
                             for="contactCheck">
@@ -925,7 +914,7 @@
                     </div>
                 </div>
             </section>
-            <!-- Top-Rated Properties Area End -->
+            <!-- pricing Area Area End -->
 
             <!-- Why Nirantar sections start -->
             <section class="highlights-section py-5" id="highlights">
@@ -1159,9 +1148,10 @@
 
                         <!-- Right: Image -->
                         <div class="col-lg-6 text-center">
-                            <form
+                            <!-- form 4 -->
+                            <form id="ajax-header-contact-4"
                                 class="p-4 rounded-4 shadow popup-forms text-white position-relative 
-                     mx-auto" style="max-width: 350px;">
+                                 mx-auto" style="max-width: 350px;">
 
                                 <!-- Close button inside form -->
                                 <h4
@@ -1169,35 +1159,32 @@
                                 a Free Consultation !
 
                                 <div class="mb-3">
-                                    <input type="text"
+                                    <input type="text" name="name1"
                                         class="form-control form-controls"
                                         placeholder="Enter your name">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text"
+                                    <input type="text" name="City"
                                         class="form-control form-controls"
                                         placeholder="Enter your City">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="tel"
+                                    <input type="tel" name="phone"
                                         class="form-control form-controls"
                                         placeholder="Enter your phone">
                                 </div>
-
-                                <!-- Button full-width on mobile, centered on large -->
                                 <div class="d-grid mb-3">
                                     <button type="submit"
                                         class="btn btn-outline-light text-dark bg-white w-100">
                                         Send Message
                                     </button>
                                 </div>
-
                                 <!-- Checkbox Notice -->
                                 <div class="form-check">
                                     <input type="checkbox"
-                                        class="form-check-input"
+                                        class="form-check-input" checked
                                         id="contactCheck">
                                     <label
                                         class="form-check-label text-white small"
@@ -1223,9 +1210,6 @@
                         <div class="col-lg-6 offset-lg-3">
                             <div
                                 class="contact-content text-center">
-                                <!-- <a href="#"><img
-                                                    src="https://i.ibb.co/QDy827D/ak-logo.png"
-                                                    alt="logo"></a> -->
                                 <p class="text-center">Disclaimer - The
                                     content provided on
                                     this website is for information
@@ -1242,7 +1226,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- footer area end -->
 
             <!-- Mobile Menu Start -->
@@ -1265,7 +1248,7 @@
 
             <!-- WhatsApp Button -->
             <a
-                href="https://api.whatsapp.com/send?phone=918368312810&text=Hi%20there%2C%20I'm%20interested%20in%20your%20services"
+                href="#"
                 class="whatsapp-button" target="_blank"
                 rel="noopener noreferrer" title="Chat with us on WhatsApp"
                 aria-label="Chat with us on WhatsApp">
@@ -1274,7 +1257,7 @@
                 </span>
             </a>
 
-            <!-- WhatsApp Button -->
+            <!-- call Button -->
             <a href="tel:9123456789" class="call-button" target="_blank"
                 title="Chat with us">
                 <span class="call-icon"><i
@@ -1296,22 +1279,22 @@
             <script src="assets/js/app.js"></script>
             <script
                 src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+            <script src="assets/js/form.js"></script>
             <script>
-                        const lightbox = GLightbox({
-                        selector: '.glightbox',
-                        loop: true
-                          });
-                        </script>
+                const lightbox = GLightbox({
+                selector: '.glightbox',
+                loop: true
+                });
+            </script>
             <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-      var contactModal = new bootstrap.Modal(
-        document.getElementById("contactModal")
-      );
-      contactModal.show();
-    }, 3000); // 3000ms = 3 seconds
-  });
-</script>
-
+                 document.addEventListener("DOMContentLoaded", function () {
+                 setTimeout(function () {
+                 var contactModal = new bootstrap.Modal(
+                 document.getElementById("contactModal")
+                 );
+                contactModal.show();
+               }, 3000); // 3000ms = 3 seconds
+                });
+            </script>
         </body>
     </html>
