@@ -4660,3 +4660,7 @@ button:hover {
 .image-item {
   text-align: right !important;
 }
+
+.apartments-section iframe {
+  border-radius: 10px;
+}
